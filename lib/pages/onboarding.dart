@@ -41,18 +41,20 @@ class _OnboardingState extends State<Onboarding> {
                     Text(
                       'Reminders made simple',
                       style: TextStyle(
-                          fontSize: 22,
-                          fontWeight: FontWeight.w500,
-                          color: CustomColors.TextHeader),
+                        fontSize: 22,
+                        fontWeight: FontWeight.w500,
+                        color: CustomColors.TextHeader,
+                      ),
                     ),
                     SizedBox(height: 15),
                     Text(
                       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris pellentesque erat in blandit luctus.',
                       style: TextStyle(
-                          fontSize: 17,
-                          fontWeight: FontWeight.w400,
-                          color: CustomColors.TextBody,
-                          fontFamily: 'opensans'),
+                        fontSize: 17,
+                        fontWeight: FontWeight.w400,
+                        color: CustomColors.TextBody,
+                        fontFamily: 'opensans',
+                      ),
                       textAlign: TextAlign.center,
                     ),
                   ],
@@ -60,7 +62,7 @@ class _OnboardingState extends State<Onboarding> {
               ),
               Expanded(
                 flex: 1,
-                child: RaisedButton(
+                child: TextButton(
                   onPressed: () {
                     // HERO-ANIMATION: https://github.com/flutter/flutter/issues/28041
                     // Navigator.of(context).pushReplacement(
@@ -74,11 +76,6 @@ class _OnboardingState extends State<Onboarding> {
                       MaterialPageRoute(builder: (context) => Empty()),
                     );
                   },
-                  textColor: Colors.white,
-                  padding: const EdgeInsets.all(0.0),
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(8.0),
-                  ),
                   child: Container(
                     width: MediaQuery.of(context).size.width / 1.4,
                     height: 60,
@@ -106,7 +103,10 @@ class _OnboardingState extends State<Onboarding> {
                       child: const Text(
                         'Get Started',
                         style: TextStyle(
-                            fontSize: 18, fontWeight: FontWeight.w500),
+                          fontSize: 18,
+                          fontWeight: FontWeight.w500,
+                          color: CustomColors.TextWhite,
+                        ),
                       ),
                     ),
                   ),

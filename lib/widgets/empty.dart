@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:todo_app/fab.dart';
+import 'package:todo_app/widgets/custom_fab.dart';
 import '../theme.dart';
 import 'appBars.dart';
 import 'bottomNavigation.dart';
+import 'custom_fab.dart';
 
 class Empty extends StatefulWidget {
   // Empty({required Key key}) : super(key: key);
@@ -36,18 +37,20 @@ class _EmptyState extends State<Empty> {
                     Text(
                       'No tasks',
                       style: TextStyle(
-                          fontSize: 22,
-                          fontWeight: FontWeight.w500,
-                          color: CustomColors.TextHeader),
+                        fontSize: 22,
+                        fontWeight: FontWeight.w500,
+                        color: CustomColors.TextHeader,
+                      ),
                     ),
                     SizedBox(height: 15),
                     Text(
                       'You have no tasks to do.',
                       style: TextStyle(
-                          fontSize: 17,
-                          fontWeight: FontWeight.w400,
-                          color: CustomColors.TextBody,
-                          fontFamily: 'opensans'),
+                        fontSize: 17,
+                        fontWeight: FontWeight.w400,
+                        color: CustomColors.TextBody,
+                        fontFamily: 'opensans',
+                      ),
                       textAlign: TextAlign.center,
                     ),
                   ],
