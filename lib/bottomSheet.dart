@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-
-import 'package:todo_app/home.dart';
-import 'util.dart';
+import 'pages/home.dart';
+import 'theme.dart';
 
 class Modal {
   mainBottomSheet(BuildContext context) {

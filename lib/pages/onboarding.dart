@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-
-import 'util.dart';
-import 'package:todo_app/empty.dart';
+import '../theme.dart';
+import '../widgets/empty.dart';
 
 class Onboarding extends StatefulWidget {
   // Onboarding({Key key}) : super(key: key);

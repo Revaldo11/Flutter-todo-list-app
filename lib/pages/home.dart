@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:todo_app/appBars.dart';
-import 'package:todo_app/bottomNavigation.dart';
 import 'package:todo_app/fab.dart';
-import 'package:todo_app/util.dart';
+import 'package:todo_app/theme.dart';
+import '../widgets/appBars.dart';
+import '../widgets/bottomNavigation.dart';
 
 class Home extends StatefulWidget {
   // Home({required Key key}) : super(key: key);

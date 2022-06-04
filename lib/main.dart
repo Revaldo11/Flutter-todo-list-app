@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:todo_app/onboarding.dart';
-import 'util.dart';
+import 'pages/onboarding.dart';
+import 'theme.dart';
 
 void main() => runApp(App());
 

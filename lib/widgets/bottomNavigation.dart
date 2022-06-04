@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:todo_app/home.dart';
-import 'package:todo_app/task.dart';
-import 'util.dart';
+import '../pages/home.dart';
+import '../pages/task.dart';
+import '../theme.dart';
 
 class BottomNavigationBarApp extends StatelessWidget {
   final int bottomNavigationBarIndex;

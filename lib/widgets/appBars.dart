@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:new_gradient_app_bar/new_gradient_app_bar.dart';
-
-import 'util.dart';
+import '../theme.dart';
 
 PreferredSizeWidget fullAppbar(BuildContext context) {
   return PreferredSize(
