@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:todo_app/widgets/custom_fab.dart';
 import 'package:todo_app/theme.dart';
-
 import '../widgets/appBars.dart';
 import '../widgets/bottomNavigation.dart';
 

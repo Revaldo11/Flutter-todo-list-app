@@ -8,7 +8,7 @@ PreferredSizeWidget fullAppbar(BuildContext context) {
     child: NewGradientAppBar(
       flexibleSpace: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: <Widget>[
+        children: [
           CustomPaint(
             painter: CircleOne(),
           ),
@@ -24,7 +24,7 @@ PreferredSizeWidget fullAppbar(BuildContext context) {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             Text(
-              'Hello Brenda!',
+              'Hi Valdo',
               style: TextStyle(fontSize: 15, fontWeight: FontWeight.w600),
             ),
             Text(
@@ -98,12 +98,20 @@ PreferredSizeWidget fullAppbar(BuildContext context) {
                 'assets/images/bell-left.png',
                 scale: 1.3,
               ),
-              Container(
-                margin: EdgeInsets.only(bottom: 80),
-                child: Icon(
-                  Icons.clear,
-                  color: Colors.white,
-                  size: 18.0,
+              Expanded(
+                child: GestureDetector(
+                  onTap: () {
+                    print('Tapped');
+                  },
+                  child: Container(
+                    margin: EdgeInsets.only(bottom: 80),
+                    padding: EdgeInsets.only(top: 5),
+                    child: Icon(
+                      Icons.clear,
+                      color: Colors.white,
+                      size: 18,
+                    ),
+                  ),
                 ),
               ),
             ],
@@ -136,7 +144,7 @@ PreferredSizeWidget emptyAppbar() {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             Text(
-              'Hello Brenda!',
+              'Hi Valdo',
               style: TextStyle(fontSize: 15, fontWeight: FontWeight.w600),
             ),
             Text(
