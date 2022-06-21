@@ -25,18 +25,17 @@ class _CardTileState extends State<CardTile> {
       endActionPane: ActionPane(
         motion: DrawerMotion(),
         children: [
-          // SlidableAction(
-          //   onPressed: (context) => (print("Send")),
-          //   backgroundColor: Color(0xFF7BC043),
-          //   foregroundColor: Colors.white,
-          //   icon: Icons.mark_email_read,
-          // ),
-          // SlidableAction(
-          //   onPressed: (context) => (print("Favorite")),
-          //   backgroundColor: Color.fromARGB(255, 228, 140, 40),
-          //   foregroundColor: Colors.white,
-          //   icon: Icons.star_border_outlined,
-          // ),
+          SlidableAction(
+              onPressed: (context) => (print("Send")),
+              backgroundColor: Color(0xFF7BC043),
+              foregroundColor: Colors.white,
+              icon: Icons.attach_email_outlined),
+          SlidableAction(
+            onPressed: (context) => (print("Favorite")),
+            backgroundColor: Color.fromARGB(255, 228, 140, 40),
+            foregroundColor: Colors.white,
+            icon: Icons.star_border_outlined,
+          ),
           SlidableAction(
             onPressed: (context) => (print("Delete")),
             backgroundColor: Color.fromARGB(255, 245, 86, 86),
